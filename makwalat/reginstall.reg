@@ -1,0 +1,37 @@
+Windows Registry Editor Version 5.00
+
+
+[HKEY_CLASSES_ROOT\.busin]
+"PerceivedType"="image"
+"Content Type"="image/png"
+[HKEY_CLASSES_ROOT\.busin\Business]
+@=""
+[HKEY_CLASSES_ROOT\.busin\shell]
+@=""
+[HKEY_CLASSES_ROOT\.busin\DefaultIcon]
+@="C:\\mokawalat\\f0.ico"
+[HKEY_CLASSES_ROOT\.busin\shell\Open MK Business]
+@=""
+[HKEY_CLASSES_ROOT\.busin\shell\Open MK Business\command]
+@="C:\\mokawalat\\Mokawalat.exe"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\business]
+"DisplayName"="business"
+"UninstallString"="\"C:\\Program Files\\Recuva\\uninst.exe\""
+"Publisher"="Ehab Magdy Abass"
+"InstallLocation"="C:\\mokawalat"
+"DisplayVersion"="1.0.2"
+"Size"=""
+"Comments"="dgsdfgsdfgsdfg"
+"Contact"="sfsfdgsfdgdf"
+"HelpLink"="http:\\www.egybank.tk"
+"LastUsedOn"="sdvsvsd"
+"ProductID"="{82285-9696-969-969-9558588686}"
+"Readme"="sfsdfsdfsdfsdf"
+"RegCompany"="sdfsdfsdfsdf"
+"RegOwner"="sdfsdfsdfsdf"
+"InstallSource"="sdfsdfsdfsdf"
+"URLInfoAbout"="sdfsfsdfsdf"
+"HelpTelephone"="2505252565625"
+"URLUpdateInfo"="sdfsdfsdf"
+"DisplayIcon"="C:\\mokawalat\\f0.ico"

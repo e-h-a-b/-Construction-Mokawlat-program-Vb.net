@@ -1,0 +1,37 @@
+Windows Registry Editor Version 5.00
+
+
+[-HKEY_CLASSES_ROOT\.busin]
+"PerceivedType"=-
+"Content Type"=-
+[-HKEY_CLASSES_ROOT\.busin\Business]
+@=-
+[-HKEY_CLASSES_ROOT\.busin\shell]
+@=-
+[-HKEY_CLASSES_ROOT\.busin\DefaultIcon]
+@=-
+[-HKEY_CLASSES_ROOT\.busin\shell\Open MK Business]
+@=-
+[-HKEY_CLASSES_ROOT\.busin\shell\Open MK Business\command]
+@=-
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\business]
+"DisplayName"=-
+"UninstallString"=-
+"Publisher"=-
+"InstallLocation"=-
+"DisplayVersion"=-
+"Size"=-
+"Comments"=-
+"Contact"=-
+"HelpLink"=-
+"LastUsedOn"=-
+"ProductID"=-
+"Readme"=-
+"RegCompany"=-
+"RegOwner"=-
+"InstallSource"=-
+"URLInfoAbout"=-
+"HelpTelephone"=-
+"URLUpdateInfo"=-
+"DisplayIcon"=-
