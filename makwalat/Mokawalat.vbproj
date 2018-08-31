@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{33E4341B-B6E3-4B66-9E2E-815AB3D24DBB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Mokawalat.My.MyApplication</StartupObject>
+    <RootNamespace>Mokawalat</RootNamespace>
+    <AssemblyName>Mokawalat</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Mokawalat.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Mokawalat.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Aha-Soft-Standard-Portfolio-Resume.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdvanceMath">
+      <HintPath>B:\on use\3D Project VB.net - 2011\Geometry3D\bin\Debug\AdvanceMath.dll</HintPath>
+    </Reference>
+    <Reference Include="Geometry3D">
+      <HintPath>B:\on use\3D Project VB.net - 2011\Geometry3D\bin\Debug\Geometry3D.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.MSScriptControl">
+      <HintPath>B:\on use\3D Project VB.net - 2011\Test3D\obj\x86\Debug\Interop.MSScriptControl.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>C:\Users\Ihab majdy\Desktop\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WebKit.Interop, Version=533.0.0.0, Culture=neutral, PublicKeyToken=b967213f6d29a3be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\WebKit.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="WebKitBrowser">
+      <HintPath>C:\Users\Ihab majdy\Desktop\New folder\WebKit.NET-0.5-bin-cairo\bin\WebKitBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="WebKitBrowserTest, Version=0.5.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <ExecutableExtension>.exe</ExecutableExtension>
+      <HintPath>bin\Debug\WebKitBrowserTest.exe</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="checkpaid.vb" />
+    <Compile Include="Camera3D.vb" />
+    <Compile Include="timer.vb" />
+    <Compile Include="Converter.vb" />
+    <Compile Include="staris.Designer.vb">
+      <DependentUpon>staris.vb</DependentUpon>
+    </Compile>
+    <Compile Include="staris.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginin.Designer.vb">
+      <DependentUpon>loginin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loginin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buy.Designer.vb">
+      <DependentUpon>buy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="buy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signup.Designer.vb">
+      <DependentUpon>signup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="signup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.vb">
+      <DependentUpon>Form7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perviewhtml.Designer.vb">
+      <DependentUpon>Perviewhtml.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Perviewhtml.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calculaction.Designer.vb">
+      <DependentUpon>calculaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="calculaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sketch.Designer.vb">
+      <DependentUpon>Sketch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sketch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="open3d.Designer.vb">
+      <DependentUpon>open3d.vb</DependentUpon>
+    </Compile>
+    <Compile Include="open3d.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="html.vb" />
+    <Compile Include="ColorTable.vb" />
+    <Compile Include="engineer.Designer.vb">
+      <DependentUpon>engineer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="engineer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test-multiprocess.Designer.vb">
+      <DependentUpon>test-multiprocess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="test-multiprocess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.vb">
+      <DependentUpon>Help.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Help.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="langaue.vb" />
+    <Compile Include="FormToRegistry.vb" />
+    <Compile Include="map.Designer.vb">
+      <DependentUpon>map.vb</DependentUpon>
+    </Compile>
+    <Compile Include="map.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="surveyCroo.Designer.vb">
+      <DependentUpon>surveyCroo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="surveyCroo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.vb">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Worker.Designer.vb">
+      <DependentUpon>Worker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Worker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Network check.vb" />
+    <Compile Include="list.Designer.vb">
+      <DependentUpon>list.vb</DependentUpon>
+    </Compile>
+    <Compile Include="list.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="perview-image.Designer.vb">
+      <DependentUpon>perview-image.vb</DependentUpon>
+    </Compile>
+    <Compile Include="perview-image.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mokawlat.Designer.vb">
+      <DependentUpon>mokawlat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mokawlat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="whtsapp-record-voice.Designer.vb">
+      <DependentUpon>whtsapp-record-voice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="whtsapp-record-voice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.vb">
+      <DependentUpon>admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="autowrite.Designer.vb">
+      <DependentUpon>autowrite.vb</DependentUpon>
+    </Compile>
+    <Compile Include="autowrite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="monthly.Designer.vb">
+      <DependentUpon>monthly.vb</DependentUpon>
+    </Compile>
+    <Compile Include="monthly.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rent machine.Designer.vb">
+      <DependentUpon>rent machine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rent machine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="offer.Designer.vb">
+      <DependentUpon>offer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="offer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="project-place.Designer.vb">
+      <DependentUpon>project-place.vb</DependentUpon>
+    </Compile>
+    <Compile Include="project-place.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="title postion.vb" />
+    <Compile Include="main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.vb">
+      <DependentUpon>main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="peri-comp.Designer.vb">
+      <DependentUpon>peri-comp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="peri-comp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="engineer.resx">
+      <DependentUpon>engineer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staris.resx">
+      <DependentUpon>staris.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginin.resx">
+      <DependentUpon>loginin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buy.resx">
+      <DependentUpon>buy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signup.resx">
+      <DependentUpon>signup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test-multiprocess.resx">
+      <DependentUpon>test-multiprocess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perviewhtml.resx">
+      <DependentUpon>Perviewhtml.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calculaction.resx">
+      <DependentUpon>calculaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sketch.resx">
+      <DependentUpon>Sketch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="open3d.resx">
+      <DependentUpon>open3d.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="map.resx">
+      <DependentUpon>map.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="surveyCroo.resx">
+      <DependentUpon>surveyCroo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Worker.resx">
+      <DependentUpon>Worker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="list.resx">
+      <DependentUpon>list.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="perview-image.resx">
+      <DependentUpon>perview-image.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mokawlat.resx">
+      <DependentUpon>mokawlat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="whtsapp-record-voice.resx">
+      <DependentUpon>whtsapp-record-voice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="peri-comp.resx">
+      <DependentUpon>peri-comp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="autowrite.resx">
+      <DependentUpon>autowrite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="monthly.resx">
+      <DependentUpon>monthly.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rent machine.resx">
+      <DependentUpon>rent machine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="offer.resx">
+      <DependentUpon>offer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="project-place.resx">
+      <DependentUpon>project-place.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Aha-Soft-Standard-Portfolio-Resume.ico" />
+    <Content Include="TextFile1.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
